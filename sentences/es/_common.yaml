@@ -1,12 +1,12 @@
-language: es
+language: "es"
 responses:
   errors:
-    no_intent: Lo siento, no te he entendido
-    no_area: No existe ninguna área llamada {{ area }}
-    no_domain: "{{ area }} no tiene {{ domain }}"
+    no_intent: "Lo siento, no te he entendido"
+    no_area: "No existe el área llamada {{ area }}"
+    no_domain: "{{ area }} no contiene {{ domain }}"
     no_device_class: "{{ area }} no tiene {{ device_class }}"
-    no_entity: No el existe dispositivo o entidad llamado {{ entity }}
-    handle_error: Un error inesperado ha ocurrido intentando procesar la instrucción
+    no_entity: "No existe el dispositivo o la entidad llamada {{ entity }}"
+    handle_error: "Un error inesperado ha ocurrido intentando procesar la instrucción"
 lists:
   color:
     values:
@@ -26,7 +26,7 @@ lists:
         out: "blue"
       - in: "(lila|morado|púrpura)"
         out: "purple"
-      - in: "marrón"
+      - in: "(marrón|café)"
         out: "brown"
   brightness:
     range:
